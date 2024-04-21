@@ -6,7 +6,7 @@ const previewImagesContainer = document.querySelector('.preview-images');
 const themeToggle = document.getElementById('toggle-theme');
 const body = document.body;
 
-const UNSPLASH_ACCESS_KEY = "LLfhGxPrt3tHaULEdLX7deRx6m1xymiAOpfcwUHvbFA"; // Your Unsplash access key here
+const UNSPLASH_ACCESS_KEY = "LLfhGxPrt3tHaULEdLX7deRx6m1xymiAOpfcwUHvbFA"; //  Unsplash access key here
 const UNSPLASH_API_URL = `https://api.unsplash.com/search/photos?client_id=${UNSPLASH_ACCESS_KEY}&query=`;
 
 let isImageGenerating = false;
@@ -78,7 +78,13 @@ const handleImageGeneration = (e) => {
 
 generateForm.addEventListener("submit", handleImageGeneration);
 
-// Preview Section (Not applicable for Unsplash API)
+generateForm.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    handleImageGeneration(event);
+  }
+});
+
+(Not applicable for Unsplash API)
 const updatePreview = () => {
   // No action needed for Unsplash API
 };
