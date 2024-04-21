@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image </title>
+    <link rel="stylesheet" href="C:\Users\DELL\Desktop\pro\style.css">
+
+</head>
+
+<body>
+
+    <section class="image-generator">
+        <button id="toggle-theme" class="btn-17">
+            <span class="text-container">
+                <span class="text">Mode</span>
+            </span>
+        </button>
+        <div class="content">
+            <h1>Image Fetcher </h1>
+            <p>Fetch beautiful images instantly!</p>
+            <form action="#" class="generate-form">
+                <input class="prompt-input" type="text" placeholder="Describe your image" required>
+                <div class="controls">
+                    <select class="img-quantity">
+                        <option value="1">1 Image</option>
+                        <option value="2">2 Images</option>
+                        <option value="3">3 Images</option>
+                        <option value="4" selected>4 Images</option>
+                    </select>
+                    <select class="img-quality-select">
+                        <option value="low"> Low </option>
+                        <option value="medium"> Medium </option>
+                        <option value="high"> High </option>
+                    </select>
+                    <button type="submit" class="generate-btn">Generate</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="image-gallery">
+        <div class="img-card"><img src="image1.jpg" alt="AI generated image"></div>
+        <div class="img-card"><img src="image2.jpg" alt="AI generated image"></div>
+        <div class="img-card"><img src="image3.png" alt="AI generated image"></div>
+        <div class="img-card"><img src="image4.jpg" alt="AI generated image"></div>
+    </section>
+    <section class="image-preview">
+        <h2>Preview</h2>
+        <div class="preview-images">
+            <!-- Preview images will be dynamically added here -->
+        </div>
+    </section>
+    <script src="C:\Users\DELL\Desktop\pro\script.js" defer></script>
+</body>
+
+</html>
