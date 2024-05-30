@@ -80,7 +80,8 @@ generateForm.addEventListener("submit", handleImageGeneration);
 
 generateForm.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
-    handleImageGeneration(event);
+    event.preventDefault(); 
+    handleImageGeneration(event); 
   }
 });
 
