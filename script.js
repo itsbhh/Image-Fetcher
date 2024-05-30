@@ -84,10 +84,6 @@ generateForm.addEventListener("keydown", (event) => {
   }
 });
 
-(Not applicable for Unsplash API)
-const updatePreview = () => {
-  // No action needed for Unsplash API
-};
 
 themeToggle.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
