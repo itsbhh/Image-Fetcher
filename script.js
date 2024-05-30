@@ -79,10 +79,11 @@ const handleImageGeneration = (e) => {
 generateForm.addEventListener("submit", handleImageGeneration);
 
 generateForm.addEventListener("keydown", (event) => {
-  if (event.key === "Enter") {
-    event.preventDefault(); 
-    handleImageGeneration(event); 
+  if (event.key === "Enter" && (event.target.classList.contains('prompt-input') || event.target.classList.contains('img-quantity'))) {
+    event.preventDefault();
+    handleImageGeneration(event);
   }
+
 });
 
 
